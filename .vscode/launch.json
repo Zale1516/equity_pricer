@@ -1,0 +1,23 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug ep_app (price)",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${workspaceFolder}/build/ep_app",
+      "args": ["data/market_data.json", "data/trade.json"],
+      "cwd": "${workspaceFolder}",
+      "preLaunchTask": "build"
+    },
+    {
+      "name": "Debug ep_smoke (tests)",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${workspaceFolder}/build/ep_smoke",
+      "args": ["data/vol_surface.csv"],
+      "cwd": "${workspaceFolder}",
+      "preLaunchTask": "build"
+    }
+  ]
+}

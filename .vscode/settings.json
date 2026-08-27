@@ -1,0 +1,28 @@
+{
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1000,
+  "cmake.saveBeforeBuild": true,
+  "cmake.configureOnOpen": true,
+  "cmake.buildDirectory": "${workspaceFolder}/build",
+  "cmake.generator": "Unix Makefiles",
+  "C_Cpp.default.cppStandard": "c++20",
+  "C_Cpp.default.includePath": [
+    "${workspaceFolder}/include"
+  ],
+  "files.associations": {
+    "*.hpp": "cpp"
+  },
+  "latex-workshop.latex.tools": [
+    {
+      "name": "latexmk",
+      "command": "/Library/TeX/texbin/latexmk",
+      "args": ["-pdf", "-interaction=nonstopmode", "-synctex=1", "-halt-on-error", "%DOC%"],
+      "env": { "PATH": "/Library/TeX/texbin:${env:PATH}" }
+    }
+  ],
+  "latex-workshop.latex.recipes": [
+    { "name": "latexmk", "tools": ["latexmk"] }
+  ],
+  "latex-workshop.latex.autoBuild.run": "onSave",
+  "latex-workshop.view.pdf.viewer": "tab"
+}
